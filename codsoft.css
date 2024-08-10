@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.header{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	padding: 3px 12%;
+	background: rgba(252, 252, 3, 0.913);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	font-size: 25px;
+	color: black;
+	font-weight: 600;
+	transition: 0.3s ease;
+}
+.logo:hover{
+	color: rgb(5, 5, 231);
+	text-shadow: 0 0 25px rgb(12, 12, 231),
+	             0 0 50px darkblue;
+    transform: scale(1.1);
+}
+span{
+	color: darkblue;
+
+}
+span h1 {
+	color: white;
+}
+.navbar a{
+	font-size: 18px;
+	color: rgb(12, 13, 13);
+	font-weight: 500;
+	margin: 0 20px;
+	border-bottom:  3px;
+	transition: 0.2s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+	color: darkblue;
+	border-bottom: 3px solid darkblue;
+	}
+.contact{
+	padding: 10px 28px;
+	background-color: rgb(10, 10, 9);
+	color: rgb(247, 242, 242);
+	border: 2px transparent;
+	border-radius: 6px;
+	font-size:  16px ;
+	letter-spacing:1px ;
+	font-weight:600 ;
+	transition: 0.4s ease;
+}	
+.contact:hover{
+	background-color: darkblue;
+	box-shadow: 0 0 25px darkblue;
+	color: rgb(34, 209, 209);
+}
+.home{
+	width: 100%;
+	min-height: 100vh;
+	background: rgb(11, 11, 11);
+	color: yellow;
+	display: flex;
+	align-items: center;
+	gap: 8em;
+	padding: 30px 12% 0;
+}
+.home-content{
+	max-width: 800px;
+}
+.home-content h3{
+	font-size: 43px
+}
+.home-content h1{
+	font-size: 63px;
+	color: rgb(221, 244, 8);
+}
+.home-content h1 span {
+	color: white;
+}
+.home-content p{
+	font-size: 18px;
+}
+.btn-box{
+	width: 322px;
+	display: flex;
+	gap: 2em;
+}
+.btn-1{
+	padding: 12px 22px;
+	background: white;
+	color: black;
+	border: 3px solid transparent;
+	border-radius: 8px;
+	font-size: 15px;
+letter-spacing: 2px;
+font-weight: 700;
+transition:0.4s ease ;
+cursor: cell;
+}
+.btn-1:hover{
+	background-color: white;
+	color: black;
+	border: 2px black;
+}
+.btn-2{
+	padding:12px 22px ;
+	background-color:white ;
+	color:black ;
+	border:3px black;
+	border-radius:8px ;
+	font-size: 15px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	transition: 0.4s ease;
+	cursor: cell;
+}
+.btn-2 :hover{
+	background-color: white;
+	color: black;
+}
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12% 8%;
+	gap: 10em;
+	background: rgb(255, 254, 254);
+}
+.about-img{
+	position: relative;
+	width: 500px;
+	box-shadow: 0 0 25px darkblue,
+                0 0 50px darkblue;
+border: 50%;
+}
+.about-content h2{
+	text-align: left;
+	color: rgba(252, 241, 241, 0.922);
+	font-size: 45px;
+}
+.about-content h3{
+	font-size: 63px;
+	color: rgba(247, 237, 237, 0.913);
+}
+.about-content p{
+	color: rgb(250, 242, 242);
+	font-size: 20px;
+	margin: 2em 0 3em;
+}
+.contact-form h2{
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	font-size: 38px;
+	background-color: rgb(16, 15, 15);
+	color: white;
+}
+.contact-form h2 span{
+	color: yellow;
+}
+.contact-form form{
+	max-width: 50em;
+	margin: 1rem auto;
+	text-align: center;
+	margin-bottom: 3em;
+	background-color: yellow;
+}
+.contact-form form .input-box{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contact-form form .input-box input,.contact-form form textarea{
+	width: 100%;
+	padding: 1.5em;
+	font-size: 18px;
+	color: black;
+	background: rgb(251, 252, 250);
+	border-radius: 1rem;
+	resize: none;
+}
+.footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	padding: 40px;
+	background-color: rgb(239, 224, 224);
+}
+.footer .social {
+	text-align: center;
+	padding-bottom: 25px;
+	color: azure;
+	background-color: yellow;
+}
+.footer .social a{
+	font-size: 24px;
+	color: azure;
+	border: 2px solid yellow;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 40%;
+	margin: 0 8px;
+	box-shadow: inset 0 0 10px yellow, 0 0 10px yellow;
+	transition:  0.3s;
+}
+.footer .social a:hover {
+	transform: scale(1.2) translateY(-10px);
+	color: yellow;
+	border: 2px solid yellow;
+}
+.footer ul{
+	margin-top: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	text-align: center;
+}
+.footerul li a:hover{
+	border-bottom: 3px solid yellow;
+}
+.footer ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+.footer.copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 12px;
+	color: azure;
+}
